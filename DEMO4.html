@@ -1,40 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favourites</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            background: url('background2.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #c7c5c3;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.685);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff2f2a2;
+            font-weight: 600;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #000000;
+        }
+        .fav-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+            gap: 20px;
+        }
+        .fav-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .fav-card:hover {
+            transform: translateY(-5px);
+        }
+        .fav-card img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .fav-card h2 {
+            color: #eee8e8d2;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
- 
-    <h1>Hi I'm Phil Josh P. Tongco</h1>
-    <h2>This is are my Favourites!</h2>
-
-    <p>I have so many Favourite things that i like i may not name them all but these are a few of them</p>
-
- 
-
-    <h2>My favourite car is a "Audi R8"</h2>
-    <img src="AUDI.jpg" alt="audi" width="200" height="142">
-
-    <h2>My favourite place is "Swiss Alps Mountain in Switzerland"</h2>
-    <img src="alps.jpg" alt="alps" width="200" height="142">
-
-    <h2>My favourite sports are "Basketball"</h2>
-    <img src="basketball.jpeg" alt="ball" width="200" height="142">
-
-    <h2>My favourite food is "Lasagna"</h2>
-    <img src="lasagna.jpg" alt="lasagna" width="200" height="142">
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Demo.html">Home</a></li>
+                <li><a href="DEMO3.html">Info</a></li>
+                <li><a href="DEMO2.html">Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <p style="color:blue;">Click the link below to know more about me!.</p>
-
-    <ul>
-        <li><a href="DEMO2.html">Hobbies</a></li>
-        <li><a href="DEMO3.html">Home</a></li>
-    </ul>
-    <img src="USTP.jpg" alt="USTP" width="200" height="250">
-    <body style="background-image: url('clouds.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-     
-    </body>
-    
+    <section class="fav-container">
+        <div class="fav-card">
+            <img src="AUDI.jpg" alt="car">
+            <h2>favourite Car</h2>
+            <p>​The 2025 Audi R8 continues its legacy as a high-performance supercar, blending luxury with 
+                advanced engineering. This model introduces significant updates, including a hybrid powertrain 
+                option and enhanced aerodynamics.​</p>
+        </div>
+        <div class="fav-card">
+            <img src="lasagna.jpg" alt="food">
+            <h2>Favourite Food</h2>
+            <p>Lasagna is a classic Italian dish made of layers of pasta sheets, rich meat or 
+                vegetable sauce, creamy béchamel or ricotta cheese, and melted cheese on top.</p>
+        </div>
+        <div class="fav-card">
+            <img src="swits.jpg" alt="Place">
+            <h2>Favourite Place</h2>
+            <p>Switzerland is a small but stunning country in Central Europe, known for its breathtaking landscapes, rich culture, and high 
+                quality of life.Home to the Swiss Alps, with peaks like the Matterhorn and Jungfraujoch. Crystal-clear lakes such as Lake Geneva and Lake Lucerne.</p>
+        </div>
+        <div class="fav-card">
+            <img src="rob.png" alt="Game">
+            <h2>Favourite Game</h2>
+            <p>Roblox is an online platform that allows users to play, create, and share games. It is one of the most popular 
+                gaming platforms, especially among younger audiences, with millions of active users worldwide.</p>
+        </div>
+    </section>
 </body>
 </html>

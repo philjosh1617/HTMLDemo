@@ -1,27 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hobbies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            background: url('background2.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #c7c5c3;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.685);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff2f2a2;
+            font-weight: 600;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #000000;
+        }
+        .hobbies-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+            gap: 20px;
+        }
+        .hobby-card {
+            background: rgba(0, 0, 0, 0.664);
+            border-radius: 20px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .hobby-card:hover {
+            transform: translateY(-5px);
+        }
+        .hobby-card img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .hobby-card h2 {
+            color: #eee8e8d2;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hi I'm Phil Josh P. Tongco</h1>
-    <h2>This is My Hobbies</h2>
-    <ul>
-        <li>I like to play games!</li>
-        <li>I go on random hikings!</li>
-        <li>I sometimes go on a road trips!</li>
-        <li>I love going to the gym!</li>
-
-<p style="color:blue;">Click the link below to know more about me!.</p>
-
- <ul>
-     <li><a href="DEMO3.html">Home</a></li>
-    <li><a href="DEMO4.html">Favourites</a></li>
- </ul>
-<img src="USTP.jpg" alt="USTP" width="200" height="250">
- <body style="background-image: url('clouds.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-     
-     </body>
-     
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Demo.html">Home</a></li>
+                <li><a href="DEMO3.html">Info</a></li>
+                <li><a href="DEMO4.html">Favourites</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hobbies-container">
+        <div class="hobby-card">
+            <img src="basketball.jpeg"Basketball">
+            <h2>Basketball</h2>
+            <p>Basketball is more than just a hobby for me; it’s a way to stay active, have fun, and challenge
+                 myself. Every time I step onto the court. Even though I’m not a 
+                 professional player, I enjoy pushing myself to get better with each game. Basketball isn’t
+                  just about winning or losing—it’s about passion, dedication, and the joy of the sport.</p>
+        </div>
+        <div class="hobby-card">
+            <img src="pc.jpg" alt="Gaming">
+            <h2>Gaming</h2>
+            <p>Playing on a gaming PC offers a smooth and immersive experience with high-quality graphics and 
+                fast performance. It allows for customization, better controls, and access to a wide range 
+                of games. Whether competing online or exploring open worlds, gaming on a PC enhances the fun and excitement.</p>
+        </div>
+        <div class="hobby-card">
+            <img src="road.jpeg" alt="Road Trips">
+            <h2>Road Trips</h2>
+            <p>Road trips are a great way to explore new places, enjoy scenic views, and create unforgettable memories. 
+                Whether driving through mountains, along the coast, or across the countryside, the journey itself is an 
+                adventure. With good music, great company, and spontaneous stops, road trips offer freedom and excitement 
+                like no other travel experience.</p>
+        </div>
+        <div class="hobby-card">
+            <img src="gym.jpg" alt="Gym & Fitness">
+            <h2>Fitness & Gym</h2>
+            <p>SGoing to the gym is a great way to stay fit, build strength, and improve overall health. It helps with discipline,
+                 boosts energy levels, and relieves stress. Whether lifting weights, running on the treadmill, or joining a
+                  fitness class, the gym provides a space to push limits and achieve personal goals.</p>
+        </div>
+    </section>
 </body>
 </html>

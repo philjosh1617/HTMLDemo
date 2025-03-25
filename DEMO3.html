@@ -1,31 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            background: url('background2.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #c7c5c3;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.685);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff2f2a2;
+            font-weight: 600;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #000000;
+        }
+        .Info-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+            gap: 20px;
+        }
+        .Info-card {
+            background: rgba(0, 0, 0, 0.664);
+            border-radius: 20px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .Info-card:hover {
+            transform: translateY(-5px);
+        }
+        .Info-card img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .Info-card h2 {
+            color: #eee8e8d2;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-  
-    <h1>Hi I'm Phil Josh P. Tongco</h1>
-    <h2>This is my home!</h2>
-
-    <img src="MACABS.jpg" alt="Macabs" width="200" height="142">
-
-    <h2>I live in Block 1, Piaping Puti, Macabalan, CDOc, MisOr</h2>
-    <h2>Home of the CAP of Mc Arthur</h2>
-
-
-    <img src="cap.jpg" alt="cap" width="200" height="142">
-
-    <p style="color:blue;">Click the link below to know more about me!.</p>
-
-    <ul>
-        <li><a href="DEMO2.html">Hobbies</a></li>
-        <li><a href="DEMO4.html">Favourites</a></li>
-    </ul>
-    <img src="USTP.jpg" alt="USTP" width="200" height="250">
-    <body style="background-image: url('clouds.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-     
-    </body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Demo.html">Home</a></li>
+                <li><a href="DEMO2.html">Hobbies</a></li>
+                <li><a href="DEMO4.html">Favourites</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <section class="Info-container">
+        <div class="Info-card">
+            <img src="tele.jpg" alt="tele">
+            <h2>Contact NO.</h2>
+            <p>+63-965-975-3223</p>
+            <p>+63-906-731-4083</p>
+            <p>881-061-2453</p>
+        </div>
+        <div class="Info-card">
+            <img src="MACABS.jpg" alt="home">
+            <h2>Address</h2>
+            <p>I live in Block 1A, Piaping puti, Macabalan, CDOC, MisOr</p>
+        </div>
+        <div class="Info-card">
+            <img src="person.jpg" alt="CP">
+            <h2>Emergency Contact</h2>
+            <p>Albina P. Tongco</p>
+            <p>09152710077</p>
+            <p>881-061-2453</p>
+        </div>
+        <div class="Info-card">
+            <img src="USTP.jpg"Education">
+            <h2>Education</h2>
+            <p>Bachelor's Degree in Information Technology</p>
+            <p>University of Science and Technology of Southern Philippines</p>
+        </div>
+    
+    </section>
 </body>
 </html>
